@@ -1,0 +1,7 @@
+all: configure.ac Makefile.am
+	# autopoint -f
+	aclocal -I m4 $(ACLOCAL_FLAGS)
+	autoheader
+	autoconf
+	libtoolize --force --copy --automake
+	automake --add-missing --copy --gnu
