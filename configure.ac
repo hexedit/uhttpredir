@@ -32,6 +32,7 @@ case $host_os in
     linux*)   platform=linux ;;
     freebsd*) platform=freebsd ;;
     openbsd*) platform=openbsd ;;
+    darwin*) platform=macosx ;;
 esac
 
 if test x$platform = x; then
